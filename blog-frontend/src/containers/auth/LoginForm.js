@@ -46,7 +46,7 @@ const LoginForm = () => {
         }
         if (auth) {
             console.log('로그인 성공');
-            dispatch(check);
+            dispatch(check());
         }
     }, [auth, authError, dispatch]);
 
