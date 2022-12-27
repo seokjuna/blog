@@ -113,7 +113,7 @@ const TagBox = ({ tags, onChangeTags }) => {
     // tags 값이 바뀔 때
     useEffect(() => {
         setLocalTags(tags);
-    }, [tags]);
+    }, [tags])
 
     return (
         <TagBoxBlock>

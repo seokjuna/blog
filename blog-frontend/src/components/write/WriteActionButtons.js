@@ -17,9 +17,7 @@ const StyledButton = styled(Button)`
     }
 `;
 
-
-
-const WriteActionButtons = ({ onCancel, onPublish}) => {
+const WriteActionButtons = ({ onCancel, onPublish }) => {
     return (
         <WriteActionButtonsBlock>
             <StyledButton cyan onClick={onPublish}>

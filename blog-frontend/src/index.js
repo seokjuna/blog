@@ -4,10 +4,10 @@ import './index.css';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { applyMiddleware, createStore } from 'redux';
-import rootReducer, { rootSaga } from './modules/index';
+import rootReducer, { rootSaga } from './modules';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { Provider } from 'react-redux';
-import createSagaMiddleware from "redux-saga";
+import createSagaMiddleware from 'redux-saga';
 import { tempSetUser, check } from './modules/user';
 
 const sagaMiddleware = createSagaMiddleware();
