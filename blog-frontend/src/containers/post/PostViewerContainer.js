@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams, useNavigate } from "react-router-dom";
 import PostActionButtons from "../../components/post/PostActionButtons";
 import PostViewer from "../../components/post/PostViewer";
+import { removePost } from "../../lib/api/posts";
 import { readPost, unloadPost } from "../../modules/post";
 import { setOriginalPost } from "../../modules/write";
 
@@ -35,12 +36,21 @@ const PostViewerContainer = ({ match }) => {
 
     const ownPost = (user && user._id) === (post && post.user._id);
 
+    const onRemove = async () => {
+        try {
+            await removePost(postId);
+            navigate('/'); // 홈으로 이동
+        } catch (e) {
+            console.log(e);
+        }
+    };
+
     return (
         <PostViewer 
             post={post} 
             loading={loading} 
             error={error} 
-            actionButtons={ownPost && <PostActionButtons onEdit={onEdit} />}
+            actionButtons={ownPost && <PostActionButtons onEdit={onEdit} onRemove={onRemove} />}
         />
     );
 };
