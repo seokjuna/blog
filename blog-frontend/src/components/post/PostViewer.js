@@ -24,7 +24,9 @@ const PostContent = styled.div`
     color: ${palette.gray[8]};
 `;
 
-const PostViewer = ({ post, error, loading }) => {
+// PostActionButtons 컴포넌트를 직접 렌더링하면, 나중에 PostActionButtons에 props를 전달할 때 
+// 무조건 PostViewer를 거쳐 전달해야 함. 이를 방지하기 위해 props를 JSX 형태로 받아서 렌더링
+const PostViewer = ({ post, error, loading, actionButtons }) => {
     // 에러 발생 시
     if (error) {
         if (error.response && error.response.status === 404) {
@@ -51,6 +53,7 @@ const PostViewer = ({ post, error, loading }) => {
                 />
                 <Tags tags={tags} />
             </PostHead>
+            {actionButtons}
             <PostContent
                 dangerouslySetInnerHTML={{ __html: body }}
             />
