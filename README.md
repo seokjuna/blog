@@ -51,10 +51,9 @@
 글 삭제
 <img width="500" alt="remove" src="https://user-images.githubusercontent.com/102382351/203050407-3db910c2-b843-4b02-83bb-e18d297a45f3.png">
 모달창을 통한 글 삭제<br>
-
+<br>
 백엔드:
 - Koa 프레임워크, MongoDB, JWT 회원 인증
-<br>
 프런트엔드:
 - yarn: axios, immer, react, react-dom, react-helmet-async, react-redux, react-router-dom<br>
     redux, redux-actions, redux-devtools-extension, redux-saga, styledcomponents<br>
