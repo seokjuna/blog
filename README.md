@@ -57,4 +57,4 @@
 프런트엔드:<br>
 - React<br>
   - yarn: axios, immer, react, react-dom, react-helmet-async, react-redux, react-router-dom<br>
-    redux, redux-actions, redux-devtools-extension, redux-saga, styledcomponents<br>
+  redux, redux-actions, redux-devtools-extension, redux-saga, styledcomponents<br>
