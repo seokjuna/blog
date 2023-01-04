@@ -54,7 +54,8 @@
 <br>
 백엔드:<br>
 - Koa 프레임워크, MongoDB, JWT 회원 인증<br>
+<br>
 프런트엔드:<br>
 - React<br>
-  - yarn: axios, immer, react, react-dom, react-helmet-async, react-redux, react-router-dom<br>
-  redux, redux-actions, redux-devtools-extension, redux-saga, styledcomponents<br>
+  - axios, immer, react, react-dom, react-helmet-async, react-redux, react-router-dom<br>
+  - redux, redux-actions, redux-devtools-extension, redux-saga, styledcomponents<br>
